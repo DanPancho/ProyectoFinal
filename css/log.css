@@ -1,0 +1,93 @@
+body{
+    background-image: linear-gradient(
+        to bottom right,
+        #4affde 0%, #5b9dff 40%, #d06bff 60%, #ff34d2 100%
+    );
+    background-size: 250% 250%;
+    animation: movingGradient 5s linear infinite alternate;
+}
+@keyframes movingGradient {
+    from {background-position: 0 0;}
+    to {background-position: 100% 92%;}
+}
+
+.input{
+    margin-top: 5em;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 50em;
+}
+
+.iconos{
+    margin-bottom: 6em;
+    position: relative;
+    top: 2em;
+}
+.email{
+    margin: 2em 0 2em 0;
+    width: 60%;
+    height: 3em;
+    border-radius: 10px;
+    background-color: #c5d4e6;
+    font-size: 1em;
+    border:0px
+}
+.password{
+    margin: 0 0 2em 0;
+    width: 60%;
+    height: 3em;
+    border-radius: 10px;
+    background-color: #c5d4e6;
+    font-size: 1em;
+    border:0px
+}
+.reg{
+    margin-bottom: 1em;
+}
+.registrar{
+    cursor: pointer;
+    width: 60%;
+    height: 3em;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bolder;
+    border:0px;
+    background-color:#f72825 ;
+    color: #fff;
+    margin: 0 0 1em 0;
+}
+
+.google{
+    font-size: 2em;
+    margin-right: 2em;
+}
+.fb{
+    font-size: 2em;
+}
+
+.inicio_sesion{
+    display: none;
+}
+
+.txt{
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+.ini_s{
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 2em;
+    height: 3em;
+    width: 10%;
+    font-size: 1em;
+}
+
+.descativar_reg{
+    display: none;
+}
+
+.activar_ini{
+    display: block;
+}
+

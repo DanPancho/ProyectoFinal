@@ -1,0 +1,2 @@
+Comando para levantar mi servidor con node js
+npx es-dev-server --node-resolve --watch 

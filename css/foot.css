@@ -1,0 +1,19 @@
+#foot {
+    background-color: #FF0600;
+    color: #fff;
+    display: flex;
+    height: 6.5em;
+}
+.footer1{
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+.foot_p{
+    display: flex;
+    width: 100%;
+}
+.sec {
+    margin-top: 1em;
+    width: 25em;
+}

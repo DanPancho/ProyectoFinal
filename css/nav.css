@@ -1,0 +1,128 @@
+* { 
+    margin: 0%;
+    padding: 0%;
+}
+#head{
+    background-color: #FF0600;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    animation-duration: 2s;
+    animation-name: slideinheader;
+}
+.nav_img { 
+    width: 10em;
+
+}
+.nav_u { 
+    display: flex;
+    position: relative;
+    left: 16em;
+    top: -4.5em;
+}
+ul {
+    list-style: none;
+    width: max-content;
+}
+.nav_li{
+    padding-top: 2.4%;
+    position: relative;
+    padding-right: 10em;
+
+}
+.nav_a {
+    font-style: italic;
+    text-shadow: 0.1px 1px black;
+    font-size: 115%;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    top: 0.1em;
+}
+
+.nav_a:hover{
+    animation-duration: 1s;
+    animation-name: slideup;
+    animation-iteration-count: infinite;
+}
+.nav_toggle { 
+    color: #fff;
+    background-color: #FF0600;
+    border: none;
+    font-size: 115%;
+    position: fixed;
+    top: 2.7%;
+    left: 90%;
+    display: none;
+
+}
+.nav_frame{
+    animation-duration: 2s;
+    animation-name: slidenav;
+
+}
+
+@keyframes slidenav {
+    0%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+@keyframes slideinheader {
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 70px;
+    }
+}
+@keyframes slideup {
+    0% { 
+        position: relative;
+        top: 0em;
+    }
+    10%{
+        position: relative;
+        top: -0.04em;
+    }
+    25% { 
+        position: relative;
+        top: -0.08em;
+        
+    }
+
+}
+@media (max-width: 1150px) {
+    .nav_li{
+        padding-top: 1.9em;
+        padding-right: 2em;
+        transition: 1s;
+    }
+}
+@media (max-width: 883px) {
+    .nav_u{
+        flex-direction: column;
+        background-color: rgb(251, 10, 10);
+        position: fixed;
+        top: 4.3em;
+        left: 100%;
+        text-align: center;
+        width: 100%;
+        height: 25%;
+        transition: 1s;
+        
+    }
+    .nav_toggle{
+        display: block;
+    }
+    .active_nav { 
+        transition: 1s;
+        left: 0%
+    }
+}
+

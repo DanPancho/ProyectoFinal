@@ -1,0 +1,75 @@
+canvas{
+    margin-top: 75px;
+}
+.startGame{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    margin: -25px 0 0 -25px;
+    background-color: aquamarine;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 1em;
+    color: #fff;
+    background-color: #FF0600;
+    height: 2em;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+
+.startGame_off{
+    display: none;
+}
+
+.Puntajes{
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    margin: -25px 0 0 -25px;
+    background-color: aquamarine;
+    width: 30%;
+    display: none;
+}
+
+.Puntajes_On{
+    display: block;
+}
+
+.top{
+    font-size: 2em;
+}
+
+.scores li{
+    font-size: 1.5em;
+}
+
+.Puntaje_Juego{
+    margin-top: 3em;
+    font-size: 2em;
+    position: fixed;
+}
+
+.Puntaje_Juego_off{
+    display: none;
+}
+
+.GameOver{
+    position: fixed;
+    top: 60%;
+    left: 42%;
+    margin: -25px 0 0 -25px;
+    background-color: aquamarine;
+    display: none;
+    width: 20%;
+}
+
+.GameOver_on{
+    display: block;
+}
+
+.socore_final{
+    font-size: 2em;
+}

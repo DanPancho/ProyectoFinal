@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="juegos, juegos en linea, juegos divertidos">
+    <meta name="author" content="Daniel Arcos">
+    <meta name="description" content="Esta pagna web esta disenada para contener varios juegos disenados por mi persona">
+    <meta name="robots" content="index">
+    <link rel="icon" href="../Imagenes_nav/Logo.ico">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/log.css">
+    <script src="https://kit.fontawesome.com/e8b0f3eb79.js" crossorigin="anonymous"
+    ></script>
+
+    <title>GameWorld_login</title>
+</head>
+<body>
+    <header id="head">
+        <nav class="nav">
+            <a href="../index.html"><img  class="nav_img nav_frame" src="../Imagenes_nav/Logo.png"></a>
+            <button class="nav_toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav_u nav_frame" >
+                <li class="nav_li ">
+                    <a href="../somos/somos.html"class="nav_a" >Quienes somos?</a>
+                </li>
+                <li class="nav_li ">
+                    <a href="#"class="nav_a" >Tienda</a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+    <!--Registro de una nueva cuenta por correo-->
+    <center>
+        <div class="input">
+            <div class="iconos">
+            
+                <i class="fab fa-google google"></i>
+                <i class="fab fa-facebook fb"></i>
+            
+            </div>
+            <form  id="form">
+                <div id="registro">
+                    <h2 class="reg">Registrate!</h2>
+                    <input type="email" id="mail" class="email"  placeholder="E-mail"><br>
+                    <input type="password" id="password" class="password"  placeholder="Password"><br>
+                    <input type="submit" value="Registrar" class="registrar">
+                    <div>
+                        <p class="txt">Ya tienes una cuenta?</p>
+                        <button class="ini_s" id="btn_ini">Iniciar Sesion</button>
+                    </div>
+                </div>
+                
+            </form>
+        
+           
+            <!--Registro de una nueva existente por correo-->
+            <form  id="form_signin">
+                <div class="inicio_sesion" id="init">
+                    <h2 class="reg">Inicio de Sesion</h2>
+                        <input type="email" id="mail_signin" class="email" placeholder="E-mail"><br>
+                        <input type="password" id="password_signin" class="password"  placeholder="Password"><br>
+                        <input type="submit" value="Ingresar" class="registrar">
+                    <div>
+                        <p class="txt">No tienes una cuenta?</p>
+                        <button class="ini_s" id="btn_reg">Registrate</button>
+                    </div>
+                   
+                </div>
+            </form>
+
+        </div>
+    </center>
+
+    <!--Log out-->
+    <button id="log_out">Log out</button>
+    <!--FIREBASE-->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-analytics.js";
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBtl9Vvh78fx2rNjztgT-pxiildKGU-Q_Y",
+          authDomain: "usuarios-fbad1.firebaseapp.com",
+          projectId: "usuarios-fbad1",
+          storageBucket: "usuarios-fbad1.appspot.com",
+          messagingSenderId: "446389755827",
+          appId: "1:446389755827:web:be5317725c28e32e8575c6",
+          measurementId: "G-2MXPGXZ9KN"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        
+      </script>
+     <!--CUSTOM-->
+     <script type="module" src="../js/login.js"></script>
+    
+  
+</body>
+</html>
